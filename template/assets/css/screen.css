@@ -48,7 +48,7 @@ img {
 @media (max-width: 480px) {
     .car {
         display: block;
-        padding: 36px 0 35px 53px;
+        padding: 36px 0 35px 52px;
         width: 480px;
     }
 }
@@ -60,19 +60,21 @@ img {
 }
 @media (max-width: 480px) {
     .car__logo {
-        padding: 0 0 28px;
+        padding: 0 0 29px;
         width: 378px;
     }
 }
 .car__labels {
-
+    left: 0;
+    position: absolute;
+    top: 0;
 }
 .car__info {
     margin: 2px 63px 0 25px;
 }
 @media (max-width: 480px) {
     .car__info {
-        margin: 0 0 30px;
+        margin: 2px 0 30px;
     }
 }
 .car__name {
@@ -123,21 +125,12 @@ img {
     }
 }
 .car__status {
- font-size: 8px;
  padding: 0 0 12px;
- text-transform: uppercase;
 }
 @media (max-width: 480px) {
     .car__status {
-        font-size: 11px;
-        padding: 0 0 18px;
+        padding: 0 0 16px;
     }
-}
-.car__status-wait {
-    color: #f28c29;
-}
-.car__status-stock {
-    color: #5fa800;
 }
 .car__price {
     color: #333;
@@ -156,7 +149,7 @@ img {
 @media (max-width: 480px) {
     .car__old-price {
         font-size: 13px;
-        margin: 10px 0 15px 2px;
+        margin: 12px 0 15px 2px;
         text-decoration: line-through;
     }
 }
@@ -164,33 +157,57 @@ img {
 
     
 }
-a.btn {
+.btn {
+    border: none;
     background-color: #2b7de0;
     border-radius: 2px;
     color: #fff;
     display: block;
-    font-size: 8px;
-    padding: 10px 44px 8px 43px;
+    font-size: 9px;
+    padding: 9px 0 8px 0;
     text-decoration: none;
     text-transform: uppercase;
+    width:100%
 }
 @media (max-width: 480px) {
-    a.btn { 
+    .btn { 
         font-size: 12px;
-        padding: 14px 0 12px 60px;
+        padding: 12px 0 11px 0;
     }
 }
-a.btn:hover {
+.btn:hover {
     background-color: #4289e0;
+}
+.btn:active, 
+.btn:focus {
+    outline: none;
 }
 .car__additional-info {
 
 }
+/*------------------------------status-----------------------------------*/
+.status__item {
+    font-size: 8px;
+    text-transform: uppercase;
+   }
+@media (max-width: 480px) {
+    .status__item {
+        font-size: 11px;
+    }
+}
+.status__item--wait {
+       color: #f28c29;
+}
+.status__item--stock {
+       color: #5fa800;
+}
+@media (max-width: 480px) {
+    .status__item--stock {
+        color: #62c34b;
+    }
+}
 /*------------------------------label-----------------------------------*/
 .label {
-    left: 0;
-    position: absolute;
-    top: 0;
 }
 .label__item {
     border-radius: 2px;
@@ -204,20 +221,20 @@ a.btn:hover {
     .label__item {
         font-size: 12px;
         margin: 0 2px 2px 0;
-        padding: 6px 8px 6px 9px;
+        padding: 7px 8px 7px 9px;
     }
 }
-.label__item-advise {
+.label__item--advise {
     background-color: #7558cd;
 }
-.label__item-new {
+.label__item--new {
     background-color: #62c34b;
 }
-.label__item-stock {
+.label__item--stock {
     background-color: #f7d33b;
     color: #333;
 }
-.label__item-hit {
+.label__item--hit {
     background-color: #e74650;
 }
 /*------------------------------details-----------------------------------*/
@@ -234,15 +251,16 @@ a.btn:hover {
 .details__name {
     float:left; 
 }
+.details__name::after {
+    content: "—";
+    padding: 0 7px 0;
+}
 .details__value {
     color: #333;
 }
-.hyphen {
-    padding: 0 7px 0;
-}
 @media (max-width: 480px) {
-    .hyphen {
-        padding: 0 11px 0;
+    .details__name::after {
+        padding: 0 12px 0;
     }
 }
 /*------------------------------counter-----------------------------------*/
@@ -251,13 +269,13 @@ a.btn:hover {
     background-color: #f8f9fb;
     border: 1px solid #f0f0f1;
     display: flex;
-    font-size: 9px;
-    margin: 15px 0 4px;
-    padding: 3px 7px 3px 5px;
+    justify-content: space-between;
+    margin: 15px 0 2px;
+    padding: 6px 7px 6px 5px;
 }
 @media (max-width: 480px) {
     .counter {
-        margin: 20px 0 4px;
+        margin: 20px 0 6px;
         padding: 8px 11px 7px 9px;
     }
 }
@@ -282,26 +300,31 @@ a.btn:hover {
     border: 0;
     min-width: 20px;
     text-align: center;
+    font-size: 9px;
+}
+@media (max-width: 480px) {
+    .counter__input {
+        font-size: 13px;
+    }
 }
 /*------------------------------additional-info-----------------------------------*/
 .additional-info {
     display: flex;
-    align-items: center;
     order:1;
-    padding: 10px 0 0 0;
+    padding: 12px 0 0 0;
 }
 @media (max-width: 480px) {
     .additional-info {
         float: right;
-        padding: 11px 38px 0 0;
+        padding: 14px 38px 0 0;
     }
 }
 .additional-info__info-icon{
-    padding: 1px 5px 0 0;
+    padding: 0 2px 0 0;
 }
 @media (max-width: 480px) {
     .additional-info__info-icon{
-        padding: 3px 4px 0 0;
+        padding: 0 4px 0 0;
     }
     .additional-info__info-icon svg{
         height:18px;
@@ -310,8 +333,8 @@ a.btn:hover {
 }
 
 .additional-info__info-icon svg{
-    height:12px;
-    width:12px;
+    height:13px;
+    width:13px;
 }
 
 
@@ -327,5 +350,6 @@ a.btn:hover {
 @media (max-width: 480px) {
     .additional-info__info{
         font-size: 12px;
+        padding: 2px 0 0 0;
     }
 }

@@ -1,13 +1,14 @@
 
-$('.counter__item-plus').on('click', countPlus);
-$('.counter__item-minus').on('click', countMinus);
-function countPlus() {
-    $input = $(this).closest('.car__quantity').find('.counter__input');
-    $input.val(parseInt($input.val()) + 1);
-}
-function countMinus() {
-    $input = $(this).closest('.car__quantity').find('.counter__input');
-    if (parseInt($input.val()) > 1) {
-        $input.val(parseInt($input.val()) - 1);
+$( document ).ready(function() {
+    $('.counter__item').on('click', countInput);
+    function countInput() {
+        $input = $(this).closest('.car__quantity').find('.counter__input');
+        if ($(this).hasClass("counter__item-plus")) {
+            $input.val(parseInt($input.val()) + 1);
+        } else if ($(this).hasClass("counter__item-minus")) {
+            if (parseInt($input.val()) > 1) {
+                $input.val(parseInt($input.val()) - 1);
+            }
+        }
     }
-}
+});

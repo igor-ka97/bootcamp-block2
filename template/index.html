@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
     <link type="text/css" rel="stylesheet" href="assets/css/reset.css" media="all">
     <link type="text/css" rel="stylesheet" href="assets/css/screen.css" media="all">
@@ -15,24 +15,26 @@
             <a href="" class="car__logo">
                 <img src="images/content/car1.png" alt="Backen Ponevira">
                 <ul class="car__labels label">
-                    <li class="label__item label__item-advise">Мы советуем</li>
-                    <li class="label__item label__item-new">Новинка</li>
+                    <li class="label__item label__item--advise">Мы советуем</li>
+                    <li class="label__item label__item--new">Новинка</li>
                 </ul>
             </a>
             <div class="car__info">
-                <h3 class="car__name">Backen Ponevira</h3>
+                <a href="#" class="car__link">
+                    <h3 class="car__name">Backen Ponevira</h3>
+                </a>
                 <div class="car__description">Люксовый автомобиль, который сумел объединить в себе несочетаемое: мощность и комфорт, динамику и экономичность, бизнес и поездки с семьей.</div>
                 <div class="car__details">
                     <dl class="details">
-                        <dt class="details__name">Мощность, л.с. <span class="hyphen">—</span></dt>
+                        <dt class="details__name">Мощность, л.с.</dt>
                         <dd class="details__value">440</dd>
                     </dl>
                     <dl class="details">
-                        <dt class="details__name">Объем двигателя, куб. см. <span class="hyphen">—</span></dt>
+                        <dt class="details__name">Объем двигателя, куб. см.</dt>
                         <dd class="details__value">2894</dd>
                     </dl>
                     <dl class="details">
-                        <dt class="details__name">Разгон до 100 км/ч, <span class="hyphen">—</span></dt>
+                        <dt class="details__name">Разгон до 100 км/ч,</dt>
                         <dd class="details__value">4.4</dd>
                     </dl>
                 </div>
@@ -45,9 +47,10 @@
                     <div class="additional-info__info">Немецкая сборка</div>
                 </div>
                 <form class="car__quantity">
-                <div class="car__status car__status-wait">Ожидается</div>
-                <div class="car__price">от 6 218 000 р.</div>
-                <div class="car__old-price"></div>
+                    <div class="car__status status">
+                        <div class="status__item status__item--wait">Ожидается</div>
+                    </div>
+                    <div class="car__price">от 6 218 000 р.</div>
                     <div class="car__counter counter">
                         <div class="counter__item counter__item-minus">
                             <svg xmlns="http://www.w3.org/2000/svg" width="9" height="9" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-minus"><line x1="5" y1="12" x2="19" y2="12"></line></svg>                         
@@ -58,36 +61,37 @@
                         </div>
                     </div>
                     <div class="car__add-action">
-                        <a href="#" class="btn">В корзину</a>
+                        <button type="submit" class="btn">В корзину</button>
                     </div>
                 </form>
-                
             </div>
         </li>
         <li class="cars__item car">
-            <a href="" class="car__logo">
-                <img src="images/content/car2.png" alt="Backen Ponevira">
+            <a href="#" class="car__logo">
+                <img src="images/content/car2.jpg" alt="Backen Ponevira">
                 <ul class="car__labels label">
-                    <li class="label__item label__item-stock">Акция</li>
-                    <li class="label__item label__item-advise">Мы советуем</li>
-                    <li class="label__item label__item-new">Новинка</li>
-                    <li class="label__item label__item-hit">Хит</li>
+                    <li class="label__item label__item--stock">Акция</li>
+                    <li class="label__item label__item--advise">Мы советуем</li>
+                    <li class="label__item label__item--new">Новинка</li>
+                    <li class="label__item label__item--hit">Хит</li>
                 </ul>
             </a>
             <div class="car__info">
-                <h3 class="car__name">Backen Mocen</h3>
+                <a href="#" class="car__link">
+                    <h3 class="car__name">Backen Mocen</h3>
+                </a>
                 <div class="car__description">Спортивный кроссовер для тех, кто предпочитает быть всегда первым – эффектный вид, полный привод, возвышенная посадка и мощный двигатель.</div>
                 <div class="car__details">
                     <dl class="details">
-                        <dt class="details__name">Мощность, л.с. <span class="hyphen">—</span></dt>
+                        <dt class="details__name">Мощность, л.с.</dt>
                         <dd class="details__value">360</dd>
                     </dl>
                     <dl class="details">
-                        <dt class="details__name">Объем двигателя, куб. см. <span class="hyphen">—</span></dt>
+                        <dt class="details__name">Объем двигателя, куб. см.</dt>
                         <dd class="details__value">2997</dd>
                     </dl>
                     <dl class="details">
-                        <dt class="details__name">Разгон до 100 км/ч, <span class="hyphen">—</span></dt>
+                        <dt class="details__name">Разгон до 100 км/ч,</dt>
                         <dd class="details__value">5.2</dd>
                     </dl>
                 </div>
@@ -100,9 +104,11 @@
                     <div class="additional-info__info">Прямая поставка из Германии</div>
                 </div>
                 <form class="car__quantity">
-                <div class="car__status car__status-stock">В наличии</div>
-                <div class="car__price">от 5 506 000 р.</div>
-                <div class="car__old-price">5 720 000 р.</div>
+                    <div class="car__status status">
+                        <div class="status__item status__item--stock">В наличии</div>
+                    </div>
+                    <div class="car__price">от 5 506 000 р.</div>
+                    <div class="car__old-price">5 720 000 р.</div>
                     <div class="car__counter counter">
                         <div class="counter__item counter__item-minus">
                             <svg xmlns="http://www.w3.org/2000/svg" width="9" height="9" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-minus"><line x1="5" y1="12" x2="19" y2="12"></line></svg>                         
@@ -113,12 +119,13 @@
                         </div>
                     </div>
                     <div class="car__add-action">
-                        <a href="#" class="btn">В корзину</a>
+                        <button type="submit" class="btn" name="btn-add">В корзину</button>
                     </div>
                 </form>
             </div>
         </li>
     </ul>
-<script src="assets/js/counter.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="assets/js/counter.js"></script>
 </body>
 </html>
