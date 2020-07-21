@@ -6,19 +6,20 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
     <link type="text/css" rel="stylesheet" href="assets/css/reset.css" media="all">
     <link type="text/css" rel="stylesheet" href="assets/css/screen.css" media="all">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <title>Car Shop</title>
 </head>
 <body>
     <ul class="cars">
         <li class="cars__item car">
-            <a href="" class="car__logo">
-                <img src="images/content/car1.png" alt="Backen Ponevira">
+            <div class="car__logo">
+                <a href="#" class="car__logo-img">
+                    <img src="images/content/car1.png" alt="Backen Ponevira">
+                </a>
                 <ul class="car__labels label">
                     <li class="label__item label__item--advise">Мы советуем</li>
                     <li class="label__item label__item--new">Новинка</li>
                 </ul>
-            </a>
+            </div>
             <div class="car__info">
                 <a href="#" class="car__link">
                     <h3 class="car__name">Backen Ponevira</h3>
@@ -52,11 +53,11 @@
                     </div>
                     <div class="car__price">от 6 218 000 р.</div>
                     <div class="car__counter counter">
-                        <div class="counter__item counter__item-minus">
+                        <div class="counter__item counter__item-minus" data-count="minus">
                             <svg xmlns="http://www.w3.org/2000/svg" width="9" height="9" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-minus"><line x1="5" y1="12" x2="19" y2="12"></line></svg>                         
                         </div>
-                        <input type="text" pattern="^[0-9]+$" class="counter__input" value="1" name="car-1" disabled>
-                        <div class="counter__item counter__item-plus">
+                        <input type="text" pattern="^[0-9]+$" class="counter__input" value="1" name="car-1">
+                        <div class="counter__item counter__item-plus" data-count="plus">
                             <svg xmlns="http://www.w3.org/2000/svg" width="9" height="9" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-plus"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg>
                         </div>
                     </div>
@@ -67,15 +68,17 @@
             </div>
         </li>
         <li class="cars__item car">
-            <a href="#" class="car__logo">
-                <img src="images/content/car2.jpg" alt="Backen Ponevira">
+            <div class="car__logo">
+                <a href="#" class="car__logo-img">
+                    <img src="images/content/car2.jpg" alt="Backen Mocen">
+                </a>
                 <ul class="car__labels label">
                     <li class="label__item label__item--stock">Акция</li>
                     <li class="label__item label__item--advise">Мы советуем</li>
                     <li class="label__item label__item--new">Новинка</li>
                     <li class="label__item label__item--hit">Хит</li>
                 </ul>
-            </a>
+            </div>
             <div class="car__info">
                 <a href="#" class="car__link">
                     <h3 class="car__name">Backen Mocen</h3>
@@ -110,11 +113,11 @@
                     <div class="car__price">от 5 506 000 р.</div>
                     <div class="car__old-price">5 720 000 р.</div>
                     <div class="car__counter counter">
-                        <div class="counter__item counter__item-minus">
+                        <div class="counter__item counter__item-minus" data-count="minus">
                             <svg xmlns="http://www.w3.org/2000/svg" width="9" height="9" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-minus"><line x1="5" y1="12" x2="19" y2="12"></line></svg>                         
                         </div>
                         <input type="text" pattern="^[0-9]+$" class="counter__input" value="1" name="car-1" disabled>
-                        <div class="counter__item counter__item-plus">
+                        <div class="counter__item counter__item-plus" data-count="plus">
                             <svg xmlns="http://www.w3.org/2000/svg" width="9" height="9" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-plus"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg>
                         </div>
                     </div>

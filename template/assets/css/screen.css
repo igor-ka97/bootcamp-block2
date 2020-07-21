@@ -42,7 +42,7 @@ img {
 .car {
     box-sizing: border-box;
     display: flex;
-    padding: 25px 26px 21px 26px;
+    padding: 24px 26px 21px 26px;
     width: 720px;    
 }
 @media (max-width: 480px) {
@@ -53,13 +53,15 @@ img {
     }
 }
 .car__logo {
-    display: block;
     flex: none;
     position: relative;
+}
+.car__logo-img {
+    display: block;
     width: 116px;
 }
 @media (max-width: 480px) {
-    .car__logo {
+    .car__logo-img {
         padding: 0 0 28px;
         width: 378px;
     }
@@ -126,23 +128,17 @@ img {
     }
 }
 .car__status {
- padding: 0 0 12px;
-
-}
-@media (max-width: 480px) {
-    .car__status {
-        padding: 0 0 18px;
-    }
 }
 .car__price {
     color: #333;
     font-size: 12px;
     font-weight: bold;
+    margin: 12px 0 0;
 }
 @media (max-width: 480px) {
     .car__price {
-        
         font-size: 17px;
+        margin: 18px 0 0;
     }
 }
 .car__old-price {
@@ -325,10 +321,15 @@ img {
     cursor: pointer;
 }
 .counter__input {
+    background-color: #f8f9fb;
     border: 0;
     min-width: 20px;
     text-align: center;
     font-size: 9px;
+}
+.counter__input:active,
+.counter__input:focus {
+    outline: none;
 }
 @media (max-width: 480px) {
     .counter__input {
