@@ -42,13 +42,13 @@ img {
 .car {
     box-sizing: border-box;
     display: flex;
-    padding: 26px 26px 21px 25px;
+    padding: 25px 26px 21px 26px;
     width: 720px;    
 }
 @media (max-width: 480px) {
     .car {
         display: block;
-        padding: 36px 0 35px 52px;
+        padding: 36px 0 36px 52px;
         width: 480px;
     }
 }
@@ -60,7 +60,7 @@ img {
 }
 @media (max-width: 480px) {
     .car__logo {
-        padding: 0 0 29px;
+        padding: 0 0 28px;
         width: 378px;
     }
 }
@@ -70,17 +70,17 @@ img {
     top: 0;
 }
 .car__info {
-    margin: 2px 63px 0 25px;
+    margin: 2px 63px 0 24px;
 }
 @media (max-width: 480px) {
     .car__info {
-        margin: 2px 0 30px;
+        margin: 2px 0 34px;
     }
 }
 .car__name {
     color: #333;
     font-size: 12px;
-    padding: 0 0 12px;
+    padding: 0 0 10px;
 }
 @media (max-width: 480px) {
     .car__name {
@@ -98,7 +98,7 @@ img {
     .car__description {
         font-size: 13px;
         line-height: 19px;
-        padding: 0 40px 24px 0;
+        padding: 0 40px 19px 0;
     }
 }
 .car__details {
@@ -117,6 +117,7 @@ img {
 
 .car__quantity {
     width: 139px;
+    margin-right: 1px;
 }
 
 @media (max-width: 480px) {
@@ -126,10 +127,11 @@ img {
 }
 .car__status {
  padding: 0 0 12px;
+
 }
 @media (max-width: 480px) {
     .car__status {
-        padding: 0 0 16px;
+        padding: 0 0 18px;
     }
 }
 .car__price {
@@ -139,17 +141,19 @@ img {
 }
 @media (max-width: 480px) {
     .car__price {
+        
         font-size: 17px;
     }
 }
 .car__old-price {
-    margin: 6px 0 15px;
+    color: #333;
+    margin: 7px 0 16px;
     text-decoration: line-through;
 }
 @media (max-width: 480px) {
     .car__old-price {
         font-size: 13px;
-        margin: 12px 0 15px 2px;
+        margin: 9px 0 14px 2px;
         text-decoration: line-through;
     }
 }
@@ -163,7 +167,7 @@ img {
     border-radius: 2px;
     color: #fff;
     display: block;
-    font-size: 9px;
+    font-size: 8px;
     padding: 9px 0 8px 0;
     text-decoration: none;
     text-transform: uppercase;
@@ -172,7 +176,7 @@ img {
 @media (max-width: 480px) {
     .btn { 
         font-size: 12px;
-        padding: 12px 0 11px 0;
+        padding: 11px 0 11px 0;
     }
 }
 .btn:hover {
@@ -214,7 +218,6 @@ img {
     color: #fff;
     display: inline-block;
     margin: 0 0 2px 0;
-    padding: 6px 7px 4px 6px;
 }
 
 @media (max-width: 480px) {
@@ -226,26 +229,51 @@ img {
 }
 .label__item--advise {
     background-color: #7558cd;
+    padding: 5px 7px 5px 6px;
+}
+@media (max-width: 480px) {
+    .label__item--advise {
+        padding: 7px 9px 7px 8px;
+    }
 }
 .label__item--new {
     background-color: #62c34b;
+    padding: 6px 8px 5px 6px;
+}
+@media (max-width: 480px) {
+    .label__item--new {
+        padding: 7px 9px 7px 8px;
+    }
 }
 .label__item--stock {
     background-color: #f7d33b;
     color: #333;
+    padding: 6px 6px 5px 6px;
+}
+@media (max-width: 480px) {
+    .label__item--stock {
+        padding: 7px 9px 7px 8px;
+    }
 }
 .label__item--hit {
     background-color: #e74650;
+    padding: 6px 7px 6px 6px;
+}
+@media (max-width: 480px) {
+    .label__item--hit {
+        padding: 7px 8px 7px 8px;
+    }
 }
 /*------------------------------details-----------------------------------*/
 .details {
     font-size: 9px;
-    padding: 0 0 6px;
+    padding: 0 0 7px;
 }
 @media (max-width: 480px) {
     .details {
         font-size: 13px;
-        padding: 0 0 8px;
+        line-height: 21px;
+        padding: 0;
     }
 }
 .details__name {
@@ -275,7 +303,7 @@ img {
 }
 @media (max-width: 480px) {
     .counter {
-        margin: 20px 0 6px;
+        margin: 20px 0 5px;
         padding: 8px 11px 7px 9px;
     }
 }
@@ -311,20 +339,20 @@ img {
 .additional-info {
     display: flex;
     order:1;
-    padding: 12px 0 0 0;
+    padding: 10px 0 0 0;
 }
 @media (max-width: 480px) {
     .additional-info {
         float: right;
-        padding: 14px 38px 0 0;
+        padding: 14px 37px 0 0;
     }
 }
 .additional-info__info-icon{
-    padding: 0 2px 0 0;
+    padding: 1px 4px 0 0;
 }
 @media (max-width: 480px) {
     .additional-info__info-icon{
-        padding: 0 4px 0 0;
+        padding: 0 6px 0 0;
     }
     .additional-info__info-icon svg{
         height:18px;
@@ -350,6 +378,6 @@ img {
 @media (max-width: 480px) {
     .additional-info__info{
         font-size: 12px;
-        padding: 2px 0 0 0;
+        padding: 3px 0 0 0;
     }
 }
