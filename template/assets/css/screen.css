@@ -305,13 +305,12 @@ img {
 }
 .counter__item {
     color: #777;
-}
-.counter__item svg{
     width: 9px;
     height: 9px;
 }
+
 @media (max-width: 480px) {
-    .counter__item svg{
+    .counter__item{
         width: 15px;
         height: 15px;
     }
@@ -348,27 +347,20 @@ img {
         padding: 14px 37px 0 0;
     }
 }
-.additional-info__info-icon{
+.additional-info__info-img{
     padding: 1px 4px 0 0;
 }
 @media (max-width: 480px) {
-    .additional-info__info-icon{
+    .additional-info__info-img{
         padding: 0 6px 0 0;
     }
-    .additional-info__info-icon svg{
-        height:18px;
-        width:18px;
-    }
 }
-
-.additional-info__info-icon svg{
+.additional-info__info-icon{
     height:13px;
     width:13px;
 }
-
-
 @media (max-width: 480px) {
-    .additional-info__info-icon svg{
+    .additional-info__info-icon{
         height:18px;
         width:18px;
     }

@@ -17,7 +17,7 @@ $( document ).ready(function() {
     function changeInput() {
         $input = $(this).closest('.car__quantity').find('.counter__input');
         $inputValue = $input.val();
-        if (parseInt($inputValue) < 1 || $inputValue == '') {
+        if (isNaN($inputValue) || parseInt($inputValue) < 1 || $inputValue == '') {
             $input.val(1);
         }
     }
