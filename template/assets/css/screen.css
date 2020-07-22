@@ -303,19 +303,19 @@ img {
         padding: 8px 11px 7px 9px;
     }
 }
-.counter__item {
+.counter__item-icon {
     color: #777;
     width: 9px;
     height: 9px;
 }
 
 @media (max-width: 480px) {
-    .counter__item{
+    .counter__item-icon{
         width: 15px;
         height: 15px;
     }
 }
-.counter__item:hover {
+.counter__item-icon:hover {
     color: #2b7de0;  
     cursor: pointer;
 }
