@@ -84,6 +84,9 @@ img {
     font-size: 12px;
     padding: 0 0 10px;
 }
+.car__name:hover {
+    color: #2b7de0;
+}
 @media (max-width: 480px) {
     .car__name {
         color: #333;
