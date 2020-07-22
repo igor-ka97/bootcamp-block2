@@ -8,14 +8,15 @@ $( document ).ready(function() {
         $inputValue = parseInt($input.val().replace(/[^\d]/g, ''));
         if (!(isNaN($inputValue))) {
             if ($action == 'plus') {
-                $input.val(parseInt($input.val()) + 1);
+                $input.val($inputValue + 1);
             } else if ($action == 'minus') {
-                if (parseInt($input.val()) > 1) {
-                    $input.val(parseInt($input.val()) - 1);
+                if ($inputValue > 1) {
+                    $input.val($inputValue - 1);
                 }
             }
         } else $input.val(1);
     }
+
     function changeInput() {
         $input = $(this).closest('.car__quantity').find('.counter__input');
         $inputValue = parseInt($input.val().replace(/[^\d]/g, ''));
